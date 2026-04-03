@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎂 Happy Birthday Eunice Nyambura Muruthi!!!! 🎉</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ffd93d 100%);
+            min-height: 100vh;
+            padding: 20px;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* HIGH FREQUENCY Flower Splash Animation */
+        @keyframes splashCelebration {
+            0% {
+                transform: scale(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.5) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes floatBalloon {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-20vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes gentleFloat {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-30px) rotate(10deg);
+            }
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.3); }
+        }
+
+        @keyframes burstFlower {
+            0% {
+                transform: scale(0) translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.5) translateY(-100px) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        .splash-celebration {
+            position: fixed;
+            pointer-events: none;
+            z-index: 10000;
+            animation: splashCelebration 0.6s ease-out forwards;
+            font-size: 40px;
+        }
+
+        .burst-flower {
+            position: fixed;
+            pointer-events: none;
+            z-index: 10001;
+            animation: burstFlower 0.8s ease-out forwards;
+            font-size: 35px;
+        }
+
+        .floating-balloon {
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            animation: floatBalloon 8s linear forwards;
+            font-size: 35px;
+        }
+
+        .gentle-float {
+            position: fixed;
+            pointer-events: none;
+            z-index: 9998;
+            animation: gentleFloat 2.5s ease-in-out infinite;
+            font-size: 28px;
+            opacity: 0.7;
+        }
+
+        .twinkle-star {
+            position: fixed;
+            pointer-events: none;
+            z-index: 9997;
+            animation: twinkle 1.5s ease-in-out infinite;
+            font-size: 22px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: fadeIn 1s ease-out;
+            position: relative;
+            z-index: 1;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ffd93d 100%);
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 3.5em;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            margin-bottom: 10px;
+            animation: bounce 1s ease;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .header p {
+            font-size: 1.3em;
+            color: white;
+            opacity: 0.95;
+        }
+
+        /* Music Bar */
+        .music-bar {
+            background: rgba(255,255,255,0.95);
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .music-btn {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ffd93d 100%);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .music-btn:hover {
+            transform: scale(1.05);
+            background: linear-gradient(135deg, #ff4757 0%, #ffb347 100%);
+        }
+
+        .music-btn.active {
+            background: linear-gradient(135deg, #ff4757 0%, #ffb347 100%);
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* Message Section - Editable */
+        .message-section {
+            padding: 50px;
+            text-align: center;
+            border-bottom: 2px solid #f0f0f0;
+            position: relative;
+        }
+
+        .message-section h2 {
+            color: #ff6b6b;
+            font-size: 2.2em;
+            margin-bottom: 25px;
+        }
+
+        .message-content {
+            color: #666;
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .message-content p {
+            margin-bottom: 15px;
+        }
+
+        .signature {
+            font-style: italic;
+            font-size: 1.2em;
+            color: #ff9a9e;
+            margin-top: 30px;
+        }
+
+        .edit-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+        }
+
+        .edit-btn:hover {
+            background: #ff4757;
+            transform: scale(1.05);
+        }
+
+        /* Photo Gallery - 8 Photos */
+        .gallery {
+            padding: 50px;
+        }
+
+        .gallery h2 {
+            text-align: center;
+            color: #ff6b6b;
+            margin-bottom: 40px;
+            font-size: 2em;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .photo-card {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            background: white;
+            position: relative;
+        }
+
+        .photo-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .photo-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .photo-caption {
+            padding: 15px;
+            text-align: center;
+            background: white;
+            font-size: 1em;
+            position: relative;
+        }
+
+        .caption-text {
+            color: #666;
+            font-weight: 500;
+            display: inline-block;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .caption-text:hover {
+            background: #f0f0f0;
+        }
+
+        .caption-edit {
+            width: 100%;
+            padding: 8px;
+            border: 2px solid #ff9a9e;
+            border-radius: 10px;
+            font-size: 0.9em;
+            text-align: center;
+            display: none;
+        }
+
+        /* Toast */
+        .toast {
+            position: fixed;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.85);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            z-index: 10001;
+            font-size: 0.9em;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .message-section {
+                padding: 30px 20px;
+            }
+            .gallery {
+                padding: 30px 20px;
+            }
+            .photo-card img {
+                height: 220px;
+            }
+            .music-btn {
+                padding: 8px 20px;
+                font-size: 0.9em;
+            }
+            .toast {
+                white-space: normal;
+                text-align: center;
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header with Eunice's Name -->
+        <div class="header">
+            <h1 id="greeting">🎂 Happy Birthday Eunice Nyambura Muruthi!!! 🎉</h1>
+            <p id="subGreeting">Celebrating a Rare Soul, A Timeless Bond!!!</p>
+        </div>
+
+        <!-- Music Bar - 3 Specific Songs -->
+        <div class="music-bar">
+            <button class="music-btn" onclick="playSong('happyBirthday')">🎂 Happy Birthday</button>
+            <button class="music-btn" onclick="playSong('stillTheOne')">💕 Still The One</button>
+            <button class="music-btn" onclick="playSong('surprise')">🎁 Surprise</button>
+            <button class="music-btn" onclick="stopMusic()">⏹️ Stop Music</button>
+        </div>
+
+        <!-- Message Section - Editable -->
+        <div class="message-section">
+            <button class="edit-btn" onclick="editMessage()">✏️ Edit Message</button>
+            <h2 id="messageTitle">Dear Eunice,</h2>
+            <div class="message-content" id="messageContent">
+                <p>There are people who come into our lives and leave footprints, and then there are those like you Ceein who become part of the journey itself. You are truly one of the best people to ever cross my destiny path, and I will never take that for granted. Watching you grow, evolve, and continue aging like fine wine is something so beautiful and inspiring. Every birthday is a reminder, a quiet countdown not just of years, but of impact, growth, and the countless lives you’ve touched sanasana yangu😏😏😏😉!</p>
+                <p>You’ve become more than a friend to me, you’ve been strength when I was weak, laughter when I needed light especially Kucheka iyo nayo ni kuoverdo kabisa, and peace in moments of chaos. Your heart, your kindness, your authenticity…😏😏 they are rare. And today, I celebrate not just the day you were born, but the incredible person you’ve become and continue to be. If birthdays are a countdown, then yours is a celebration of purpose, grace, and undeniable beauty inside and out.</p>
+                <p>I hope this year brings you everything your heart has ever whispered about in quiet moments na zile you say fom lazima ijipe. May you continue shining, growing, and becoming even more of the amazing person you already are. You deserve love in its purest form, happiness in its fullest measure, and success that reflects your worth. Keep being you because that alone is magic........ Na ũkũrĩre hau ha mũico 😏😏 .!</p>
+                <p> 💖</p>
+            </div>
+            <div class="signature" id="signature">
+                Salud! 🥂,<br>
+                KK 🎂
+            </div>
+        </div>
+
+        <!-- Photo Gallery - 8 Photos -->
+        <div class="gallery">
+            <h2>📸 I aint exaggerating😉  📸</h2>
+            <div class="photo-grid" id="photoGrid">
+                <!-- 8 Photos will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <audio id="bgMusic" loop></audio>
+
+    <script>
+        // ========== YOUR 8 PHOTOS ==========
+        let myPhotos = [
+            { file: 'images/photo1.jpeg', caption: 'Elegance in simplicity✨' },
+            { file: 'images/photo2.jpeg', caption: 'Unmatched vibe, real queen 💕' },
+            { file: 'images/photo3.jpeg', caption: 'Absolutely stunning, effortlessly radiant 🌹' },
+            { file: 'images/photo4.jpeg', caption: 'Simply stunning 💖' },
+            { file: 'images/photo5.jpeg', caption: 'Joy and happiness personified 🌟' },
+            { file: 'images/photo6.jpeg', caption: 'Beautiful inside and out 💫' },
+            { file: 'images/photo7.jpeg', caption: 'Jeez Grace in every moment 📸' },
+            { file: 'images/photo8.jpeg', caption: 'Soft heart, strong soul 💝' }
+        ];
+        
+        // ========== YOUR 3 SONGS (in songs folder) ==========
+        const songs = {
+            happyBirthday: 'songs/Happy Birthday.mp3',
+            stillTheOne: 'songs/Still The One.mp3',
+            surprise: 'songs/Surprise.mp3'
+        };
+        
+        // ========== DO NOT EDIT BELOW THIS LINE ==========
+        
+        let musicPlaying = false;
+        let currentAudio = document.getElementById('bgMusic');
+        let celebrationInterval = null;
+        let burstInterval = null;
+        
+        // ========== HIGH FREQUENCY FLOWER SPLASHING ==========
+        
+        // Create multiple random splashes at once (HIGH FREQUENCY)
+        function createMultipleSplashes(count) {
+            for (let i = 0; i < count; i++) {
+                setTimeout(() => {
+                    createRandomSplash();
+                }, i * 30);
+            }
+        }
+        
+        // Create random splash anywhere on screen
+        function createRandomSplash() {
+            const celebrationItems = ['🌸', '🌹', '🌺', '🌻', '🌷', '💐', '🎂', '🎉', '🎈', '🎊', '✨', '🌟', '💖', '💕', '🎁', '🎀', '🌸', '🌹', '🌼'];
+            
+            const x = Math.random() * window.innerWidth;
+            const y = Math.random() * window.innerHeight;
+            
+            const splash = document.createElement('div');
+            splash.className = 'splash-celebration';
+            splash.textContent = celebrationItems[Math.floor(Math.random() * celebrationItems.length)];
+            splash.style.left = x + 'px';
+            splash.style.top = y + 'px';
+            splash.style.fontSize = (Math.random() * 45 + 25) + 'px';
+            
+            document.body.appendChild(splash);
+            setTimeout(() => splash.remove(), 600);
+        }
+        
+        // Create burst of flowers from center
+        function createFlowerBurst() {
+            const flowers = ['🌸', '🌹', '🌺', '🌻', '🌷', '💐', '🌸', '🌹', '🌼'];
+            const centerX = window.innerWidth / 2;
+            const centerY = window.innerHeight / 2;
+            
+            for (let i = 0; i < 30; i++) {
+                setTimeout(() => {
+                    const burst = document.createElement('div');
+                    burst.className = 'burst-flower';
+                    burst.textContent = flowers[Math.floor(Math.random() * flowers.length)];
+                    
+                    const angle = Math.random() * Math.PI * 2;
+                    const distance = Math.random() * 200;
+                    const x = centerX + Math.cos(angle) * distance;
+                    const y = centerY + Math.sin(angle) * distance;
+                    
+                    burst.style.left = x + 'px';
+                    burst.style.top = y + 'px';
+                    burst.style.fontSize = (Math.random() * 40 + 25) + 'px';
+                    
+                    document.body.appendChild(burst);
+                    setTimeout(() => burst.remove(), 800);
+                }, i * 20);
+            }
+        }
+        
+        // Create floating balloons from bottom
+        function createFloatingBalloon() {
+            const balloons = ['🎈', '🎈', '🎈', '🎉', '🎊', '✨', '🌟', '💖', '🎂', '🌸', '🌹'];
+            const balloon = document.createElement('div');
+            balloon.className = 'floating-balloon';
+            balloon.textContent = balloons[Math.floor(Math.random() * balloons.length)];
+            balloon.style.left = Math.random() * window.innerWidth + 'px';
+            balloon.style.fontSize = (Math.random() * 40 + 25) + 'px';
+            balloon.style.animationDuration = (Math.random() * 6 + 5) + 's';
+            document.body.appendChild(balloon);
+            setTimeout(() => balloon.remove(), 8000);
+        }
+        
+        // Create gentle floating decorations
+        function createGentleFloat() {
+            const decorations = ['🌸', '🌹', '🌺', '🌼', '💐', '⭐', '✨', '🌟', '💕', '💖'];
+            const gentle = document.createElement('div');
+            gentle.className = 'gentle-float';
+            gentle.textContent = decorations[Math.floor(Math.random() * decorations.length)];
+            gentle.style.left = Math.random() * window.innerWidth + 'px';
+            gentle.style.top = Math.random() * window.innerHeight + 'px';
+            gentle.style.fontSize = (Math.random() * 30 + 20) + 'px';
+            gentle.style.animationDelay = Math.random() * 2 + 's';
+            document.body.appendChild(gentle);
+            setTimeout(() => gentle.remove(), 2500);
+        }
+        
+        // Create twinkling stars
+        function createTwinkleStar() {
+            const stars = ['⭐', '🌟', '✨', '💫', '⭐', '✨'];
+            const star = document.createElement('div');
+            star.className = 'twinkle-star';
+            star.textContent = stars[Math.floor(Math.random() * stars.length)];
+            star.style.left = Math.random() * window.innerWidth + 'px';
+            star.style.top = Math.random() * window.innerHeight + 'px';
+            star.style.fontSize = (Math.random() * 25 + 15) + 'px';
+            star.style.animationDuration = (Math.random() * 1.5 + 0.8) + 's';
+            document.body.appendChild(star);
+            setTimeout(() => star.remove(), 2500);
+        }
+        
+        // HIGH FREQUENCY - Start continuous celebration (VERY FAST)
+        function startContinuousCelebration() {
+            // Create splashes every 0.2 seconds (HIGH FREQUENCY!)
+            celebrationInterval = setInterval(() => {
+                createMultipleSplashes(3); // 3 splashes at once
+            }, 200);
+            
+            // Create flower bursts every 1.5 seconds
+            burstInterval = setInterval(() => {
+                createFlowerBurst();
+            }, 1500);
+            
+            // Create floating balloons every 0.5 seconds
+            setInterval(() => {
+                createFloatingBalloon();
+            }, 500);
+            
+            // Create gentle floats every 0.8 seconds
+            setInterval(() => {
+                createGentleFloat();
+            }, 800);
+            
+            // Create twinkling stars every 0.6 seconds
+            setInterval(() => {
+                createTwinkleStar();
+            }, 600);
+        }
+        
+        // Load 8 photos with editable captions
+        function loadPhotos() {
+            const grid = document.getElementById('photoGrid');
+            grid.innerHTML = '';
+            
+            myPhotos.forEach((photo, index) => {
+                const card = document.createElement('div');
+                card.className = 'photo-card';
+                
+                const img = document.createElement('img');
+                img.src = photo.file;
+                img.alt = photo.caption;
+                img.onerror = function() {
+                    this.src = 'https://drive.google.com/file/d/1fDp6S2AFiec7WQERibtDodreHrODqAHH/view?usp=sharing' + (index + 1);
+                };
+                
+                const captionDiv = document.createElement('div');
+                captionDiv.className = 'photo-caption';
+                
+                const captionSpan = document.createElement('span');
+                captionSpan.className = 'caption-text';
+                captionSpan.textContent = photo.caption;
+                captionSpan.onclick = () => editCaption(index, captionSpan);
+                
+                const captionInput = document.createElement('input');
+                captionInput.className = 'caption-edit';
+                captionInput.value = photo.caption;
+                captionInput.onblur = () => saveCaption(index, captionInput, captionSpan);
+                captionInput.onkeypress = (e) => {
+                    if (e.key === 'Enter') saveCaption(index, captionInput, captionSpan);
+                };
+                
+                captionDiv.appendChild(captionSpan);
+                captionDiv.appendChild(captionInput);
+                card.appendChild(img);
+                card.appendChild(captionDiv);
+                grid.appendChild(card);
+            });
+        }
+        
+        // Edit caption
+        function editCaption(index, spanElement) {
+            const card = spanElement.closest('.photo-card');
+            const captionDiv = card.querySelector('.photo-caption');
+            const span = captionDiv.querySelector('.caption-text');
+            const input = captionDiv.querySelector('.caption-edit');
+            
+            span.style.display = 'none';
+            input.style.display = 'block';
+            input.focus();
+        }
+        
+        // Save caption
+        function saveCaption(index, inputElement, spanElement) {
+            const newCaption = inputElement.value;
+            if (newCaption.trim()) {
+                myPhotos[index].caption = newCaption;
+                spanElement.textContent = newCaption;
+                savePhotosToLocal();
+                showToast('✨ Caption updated! ✨');
+                createMultipleSplashes(15);
+            }
+            inputElement.style.display = 'none';
+            spanElement.style.display = 'inline-block';
+        }
+        
+        // Save photos to localStorage
+        function savePhotosToLocal() {
+            localStorage.setItem('eunicePhotos', JSON.stringify(myPhotos));
+        }
+        
+        // Load photos from localStorage
+        function loadPhotosFromLocal() {
+            const saved = localStorage.getItem('eunicePhotos');
+            if (saved) {
+                myPhotos = JSON.parse(saved);
+            }
+            loadPhotos();
+        }
+        
+        // Play song
+        function playSong(songKey) {
+            const songUrl = songs[songKey];
+            
+            if (songUrl) {
+                currentAudio.src = songUrl;
+                currentAudio.play().catch(e => {
+                    showToast('Click the button again to play 🎵');
+                });
+                musicPlaying = true;
+                
+                document.querySelectorAll('.music-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                event.target.classList.add('active');
+                
+                let songDisplayName = '';
+                if (songKey === 'happyBirthday') songDisplayName = 'Happy Birthday';
+                else if (songKey === 'stillTheOne') songDisplayName = 'Still The One';
+                else songDisplayName = 'Surprise';
+                
+                showToast(`🎵 Now playing: ${songDisplayName} 🎵`);
+                createMultipleSplashes(30);
+                createFlowerBurst();
+            } else {
+                showToast('Song file not found. Please add it to the songs folder');
+            }
+        }
+        
+        function stopMusic() {
+            currentAudio.pause();
+            currentAudio.currentTime = 0;
+            musicPlaying = false;
+            document.querySelectorAll('.music-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            showToast('⏹️ Music stopped');
+        }
+        
+        // Edit message function
+        function editMessage() {
+            const newGreeting = prompt('Edit the main greeting:', document.getElementById('greeting').textContent);
+            if (newGreeting) document.getElementById('greeting').textContent = newGreeting;
+            
+            const newSub = prompt('Edit the subtitle:', document.getElementById('subGreeting').textContent);
+            if (newSub) document.getElementById('subGreeting').textContent = newSub;
+            
+            const newTo = prompt('Edit "To:" (e.g., Dear Eunice,):', document.getElementById('messageTitle').textContent);
+            if (newTo) document.getElementById('messageTitle').textContent = newTo;
+            
+            const newMessage = prompt('Edit your message:', document.getElementById('messageContent').innerText);
+            if (newMessage) {
+                document.getElementById('messageContent').innerHTML = newMessage.split('\n').map(p => `<p>${p}</p>`).join('');
+            }
+            
+            const newSignature = prompt('Edit signature:', document.getElementById('signature').innerHTML);
+            if (newSignature) document.getElementById('signature').innerHTML = newSignature;
+            
+            saveMessageData();
+            showToast('✨ Message updated! ✨');
+            createMultipleSplashes(30);
+            createFlowerBurst();
+        }
+        
+        // Save message to localStorage
+        function saveMessageData() {
+            const messageData = {
+                greeting: document.getElementById('greeting').textContent,
+                subGreeting: document.getElementById('subGreeting').textContent,
+                messageTitle: document.getElementById('messageTitle').textContent,
+                messageContent: document.getElementById('messageContent').innerHTML,
+                signature: document.getElementById('signature').innerHTML
+            };
+            localStorage.setItem('euniceMessage', JSON.stringify(messageData));
+        }
+        
+        // Load saved message
+        function loadMessageData() {
+            const saved = localStorage.getItem('euniceMessage');
+            if (saved) {
+                const data = JSON.parse(saved);
+                document.getElementById('greeting').textContent = data.greeting;
+                document.getElementById('subGreeting').textContent = data.subGreeting;
+                document.getElementById('messageTitle').textContent = data.messageTitle;
+                document.getElementById('messageContent').innerHTML = data.messageContent;
+                document.getElementById('signature').innerHTML = data.signature;
+            }
+        }
+        
+        // Toast notification
+        function showToast(message) {
+            const existingToast = document.querySelector('.toast');
+            if (existingToast) existingToast.remove();
+            
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            toast.textContent = message;
+            document.body.appendChild(toast);
+            setTimeout(() => toast.remove(), 3000);
+        }
+        
+        // Initialize everything
+        function init() {
+            loadPhotosFromLocal();
+            loadMessageData();
+            startContinuousCelebration();
+            
+            // Create initial massive celebration burst
+            setTimeout(() => {
+                for (let i = 0; i < 100; i++) {
+                    setTimeout(() => createRandomSplash(), i * 20);
+                }
+                createFlowerBurst();
+            }, 500);
+            
+            setTimeout(() => {
+                showToast('🎉 Happy Birthday Eunice! 🎂 Flowers are splashing everywhere! 🎉');
+            }, 1500);
+        }
+        
+        init();
+    </script>
+</body>
+</html>
