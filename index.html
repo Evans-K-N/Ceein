@@ -290,12 +290,16 @@
             box-shadow: 0 20px 40px rgba(0,0,0,0.25);
         }
 
+        /* FIXED: Photos now show completely without cropping */
         .photo-card img {
             width: 100%;
-            height: 280px;
-            object-fit: cover;
+            height: auto;
+            min-height: 280px;
+            max-height: 450px;
+            object-fit: contain;
             display: block;
             transition: transform 0.5s ease;
+            background: #f8f9fa;
         }
 
         .photo-card:hover img {
@@ -360,8 +364,11 @@
             .gallery {
                 padding: 30px 20px;
             }
+            /* FIXED: Mobile responsive - photos show full size */
             .photo-card img {
-                height: 220px;
+                height: auto;
+                min-height: 220px;
+                max-height: 350px;
             }
             .music-btn {
                 padding: 8px 20px;
@@ -396,8 +403,8 @@
             <button class="edit-btn" onclick="editMessage()">✏️ Edit Message</button>
             <h2 id="messageTitle">Dear Eunice,</h2>
             <div class="message-content" id="messageContent">
-                <p>There are people who come into our lives and leave footprints, and then there are those like you Ceein who become part of the journey itself. You are truly one of the best people to ever cross my destiny path, and I will never take that for granted. Watching you grow, evolve, and continue aging like fine wine is something so beautiful and inspiring. Every birthday is a reminder, a quiet countdown not just of years, but of impact, growth, and the countless lives you’ve touched sanasana yangu😏😏😏😉!</p>
-                <p>You’ve become more than a friend to me, you’ve been strength when I was weak, laughter when I needed light especially Kucheka iyo nayo ni kuoverdo kabisa, and peace in moments of chaos. Your heart, your kindness, your authenticity…😏😏 they are rare. And today, I celebrate not just the day you were born, but the incredible person you’ve become and continue to be. If birthdays are a countdown, then yours is a celebration of purpose, grace, and undeniable beauty inside and out.</p>
+                <p>There are people who come into our lives and leave footprints, and then there are those like you Ceein who become part of the journey itself. You are truly one of the best people to ever cross my destiny path, and I will never take that for granted. Watching you grow, evolve, and continue aging like fine wine is something so beautiful and inspiring. Every birthday is a reminder, a quiet countdown not just of years, but of impact, growth, and the countless lives you've touched sanasana yangu😏😏😏😉!</p>
+                <p>You've become more than a friend to me, you've been strength when I was weak, laughter when I needed light especially Kucheka iyo nayo ni kuoverdo kabisa, and peace in moments of chaos. Your heart, your kindness, your authenticity…😏😏 they are rare. And today, I celebrate not just the day you were born, but the incredible person you've become and continue to be. If birthdays are a countdown, then yours is a celebration of purpose, grace, and undeniable beauty inside and out.</p>
                 <p>I hope this year brings you everything your heart has ever whispered about in quiet moments na zile you say fom lazima ijipe. May you continue shining, growing, and becoming even more of the amazing person you already are. You deserve love in its purest form, happiness in its fullest measure, and success that reflects your worth. Keep being you because that alone is magic........ Na ũkũrĩre hau ha mũico 😏😏 .!</p>
                 <p> 💖</p>
             </div>
@@ -583,7 +590,7 @@
                 img.src = photo.file;
                 img.alt = photo.caption;
                 img.onerror = function() {
-                    this.src = 'https://drive.google.com/file/d/1fDp6S2AFiec7WQERibtDodreHrODqAHH/view?usp=sharing' + (index + 1);
+                    this.src = 'https://via.placeholder.com/400x500/ff6b6b/ffffff?text=Eunice+Photo+' + (index + 1);
                 };
                 
                 const captionDiv = document.createElement('div');
